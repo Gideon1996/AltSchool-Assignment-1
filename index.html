@@ -4,73 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alt School Africa First Assigbment</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/calculator assignment/CalStyle.css" />
+    <title>Calculator</title>
   </head>
   <body>
+    <header>
+        <img class="logo" src="/images/Altschool Logo.jpg" alt="">
+    </header>
     <div class="container">
-      <img class="main-image" src="/images/IMG_20220513_164955.jpg" alt="" />
-
-      <article class="article-container">
-        <nav class="main-nav">
-          <ul>
-            <li><a href="/index.html">About Me</a></li>
-            <li><a href="/contactus.html">Contact Me</a></li>
-            <li><a href="/register.html">Registration</a></li>
-            <li><a href="/login.html">Log In</a></li>
-          </ul>
-        </nav>
-        <div class="empty"></div>
-        <h1>About Me</h1>
-        <div class="profile-img">
-          <img
-            src="/images/+234 803 835 1249 20211226_225730.jpg"
-            alt="Profile Pix"
-          />
-          <p>
-            <em
-              ><strong><small>By Gideon Igbenehi</small></strong></em
-            >
-          </p>
-        </div>
-        <p>
-          My name is Gideon Igbenehi. I am an ambitious and driven young man
-          from Delta State, Nigerian. I thrive on challenge and constantly set
-          goals for myself, so I have something to strive toward. It is what has
-          been helping me in my dreams of becoming a renowed sofware programmer.
-          <br /><br />My Goal for this journey i"ve embarked on with AltSchool
-          Africa is to learn modern and marketable software engineerting skills
-          in Tech as a Frontend Developer, to be able to solve world problems
-          using codes. I have resolved to make myself available for Live
-          Classes, use my LMS and practice the things I'll be learning.
-        </p>
-        <h2>Education</h2>
-        <div class="education-grid">
-          <div>Delta State Polytechnic Otefe-Oghara <br>Electrical Engineering (OND)</div>
-          <div>2015 - 2017</div>
-          <div>Federal Polytechnic Ilaro Ogun State <br>Electrical Engineering (HND)</div>
-          <div>2018 - 2021</div>
-          <div>AltSchool Africa <br>Front-End Engineering (Diploma)</div>
-          <div>Awaiting Certification</div>
-        </div>
-        <h2>JOb Experience</h2>
-        <div class="job-grid">
-          <div> FarEast Merchandise <br>Engineering Maintenance Department</div>
-          <div>2017 - 2018</div>
-          <div>Universal Horizon Limited <br>ATM Machine Field Maintenance Engineer</div>
-          <div>2019 - 2020</div>
-          <div>The-Will Nigeria <br>News MediaContent Creator/Social Media Manager</div>
-          <div>2020 - 2021</div>
-        </div>
-        <h2>Hobbies</h2>
-        <div class="hobbies">
-          <p>
-            I love listening to music and playing the guitar, playing, traveling
-            and sight-seeing, going for evening walks, and of course the most
-            recent of them all; Coding
-          </p>
-        </div>
-      </article>
-    </div>
+    <form class="calculator" name="calc">
+      <input class="value" type="text" name="txt" readonly="" />
+      <span class="num clear" onclick="document.calc.txt.value = ''">C</span>
+      <span class="num" onclick="document.calc.txt.value += '/'">/</span>
+      <span class="num" onclick="document.calc.txt.value += '*'">*</span>
+      <span class="num" onclick="document.calc.txt.value += '7'">7</span>
+      <span class="num" onclick="document.calc.txt.value += '8'">8</span>
+      <span class="num" onclick="document.calc.txt.value += '9'">9</span>
+      <span class="num" onclick="document.calc.txt.value += '-'">-</span>
+      <span class="num" onclick="document.calc.txt.value += '4'">4</span>
+      <span class="num" onclick="document.calc.txt.value += '5'">5</span>
+      <span class="num" onclick="document.calc.txt.value += '6'">6</span>
+      <span class="num plus" onclick="document.calc.txt.value += '+'">+</span>
+      <span class="num" onclick="document.calc.txt.value += '3'">3</span>
+      <span class="num" onclick="document.calc.txt.value += '2'">2</span>
+      <span class="num" onclick="document.calc.txt.value += '1'">1</span>
+      <span class="num" onclick="document.calc.txt.value += '0'">0</span>
+      <span class="num" onclick="document.calc.txt.value += '00'">00</span>
+      <span
+        class="num equal"
+        onclick="document.calc.txt.value = eval(calc.txt.value)"
+        >=</span
+      >
+    </form>
+</div>
   </body>
 </html>
